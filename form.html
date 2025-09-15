@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>แบบสอบถามประเมินความพึงพอใจ</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+</style>
+<body>
+  <form action="save.php" method="post">
+    <center><h2>แบบสอบถามประเมินความพึงพอใจต่อการจัดกิจกรรม</h2> </center>
+    <hr>
+    <h3>ตอนที่ 1 ข้อมูลทั่วไป</h3>
+    สาขาวิชา:
+    <input type="radio" name="branch" value="วิทยาการคอมพิวเตอร์"> วิทยาการคอมพิวเตอร์
+    <input type="radio" name="branch" value="เทคโนโลยีสารสนเทศ"> เทคโนโลยีสารสนเทศ<br>
+
+    เพศ:
+    <input type="radio" name="gender" value="ชาย"> ชาย
+    <input type="radio" name="gender" value="หญิง"> หญิง<br>
+
+    ชั้นปี:
+    <input type="radio" name="year" value="1"> 1
+    <input type="radio" name="year" value="2"> 2
+    <input type="radio" name="year" value="3"> 3
+    <input type="radio" name="year" value="4"> 4<br><br>
+
+    <h3>ตอนที่ 2 ความพึงพอใจ</h3>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th rowspan="2">ลำดับที่</th>
+        <th rowspan="2">รายการประเมิน</th>
+        <th colspan="5">ระดับความคิดเห็น</th>
+      </tr>
+      <tr>
+        <th>มากที่สุด<br>(5)</th>
+        <th>มาก<br>(4)</th>
+        <th>ปานกลาง<br>(3)</th>
+        <th>น้อย<br>(2)</th>
+        <th>น้อยที่สุด<br>(1)</th>
+      </tr>
+      <tr><td>1</td><td>การประชาสัมพันธ์การจัดกิจกรรม</td>
+        <td><input type="radio" name="q1" value="5"></td>
+        <td><input type="radio" name="q1" value="4"></td>
+        <td><input type="radio" name="q1" value="3"></td>
+        <td><input type="radio" name="q1" value="2"></td>
+        <td><input type="radio" name="q1" value="1"></td></tr>
+
+      <tr><td>2</td><td>ความเหมาะสมของวันที่จัดกิจกรรม</td>
+        <td><input type="radio" name="q2" value="5"></td>
+        <td><input type="radio" name="q2" value="4"></td>
+        <td><input type="radio" name="q2" value="3"></td>
+        <td><input type="radio" name="q2" value="2"></td>
+        <td><input type="radio" name="q2" value="1"></td></tr>
+
+      <tr><td>3</td><td>ความเหมาะสมระยะเวลาที่ใช้ในการจัดกิจกรรม</td>
+        <td><input type="radio" name="q3" value="5"></td>
+        <td><input type="radio" name="q3" value="4"></td>
+        <td><input type="radio" name="q3" value="3"></td>
+        <td><input type="radio" name="q3" value="2"></td>
+        <td><input type="radio" name="q3" value="1"></td></tr>
+
+      <tr><td>4</td><td>ความเหมาะสมของสถานที่ที่ใช้จัดกิจกรรม</td>
+        <td><input type="radio" name="q4" value="5"></td>
+        <td><input type="radio" name="q4" value="4"></td>
+        <td><input type="radio" name="q4" value="3"></td>
+        <td><input type="radio" name="q4" value="2"></td>
+        <td><input type="radio" name="q4" value="1"></td></tr>
+
+      <tr><td>5</td><td>รูปแบบการดำเนินกิจกรรม</td>
+        <td><input type="radio" name="q5" value="5"></td>
+        <td><input type="radio" name="q5" value="4"></td>
+        <td><input type="radio" name="q5" value="3"></td>
+        <td><input type="radio" name="q5" value="2"></td>
+        <td><input type="radio" name="q5" value="1"></td></tr>
+
+      <tr><td>6</td><td>ท่านมีส่วนร่วมในการทำกิจกรรม</td>
+        <td><input type="radio" name="q6" value="5"></td>
+        <td><input type="radio" name="q6" value="4"></td>
+        <td><input type="radio" name="q6" value="3"></td>
+        <td><input type="radio" name="q6" value="2"></td>
+        <td><input type="radio" name="q6" value="1"></td></tr>
+
+      <tr><td>7</td><td>ความพึงพอใจโดยรวมในการจัดกิจกรรม</td>
+        <td><input type="radio" name="q7" value="5"></td>
+        <td><input type="radio" name="q7" value="4"></td>
+        <td><input type="radio" name="q7" value="3"></td>
+        <td><input type="radio" name="q7" value="2"></td>
+        <td><input type="radio" name="q7" value="1"></td></tr>
+    </table><br>
+
+    ตอนที่ 3 ข้อเสนอแนะ:<br>
+    <textarea name="suggestion" rows="5" cols="60"></textarea><br><br>
+
+    <input type="submit" value="บันทึกข้อมูล">
+  </form>
+</body>
+</html>
